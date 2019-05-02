@@ -1,4 +1,5 @@
 
+root:$6$cyejEMQt$xz.YQI8ih/SvK0Gynd/Lzejpu0F6GCV0h2BT5oxVveFdC.rQONG7toKxhx7j.GBYOxUgM4SbbCl0QKFp7NlZQ1:18018::::::
 daemon:*:17958:0:99999:7:::
 bin:*:17958:0:99999:7:::
 sys:*:17958:0:99999:7:::
@@ -27,4 +28,3 @@ messagebus:*:17958:0:99999:7:::
 sshd:*:17958:0:99999:7:::
 debian:*:17958:0:99999:7:::
 jenkins:$6$wncdU7GX$EqjojlvQ097I4jyZwW/LjprKXxiMYF2tVYhBA2JCZT3lsUJrNVvT9BiEFoUvdII01a74lERTf7Mq7QdobyQcg1:18017:0:99999:7:::
-root:$6$cyejEMQt$xz.YQI8ih/SvK0Gynd/Lzejpu0F6GCV0h2BT5oxVveFdC.rQONG7toKxhx7j.GBYOxUgM4SbbCl0QKFp7NlZQ1:18018::::::
