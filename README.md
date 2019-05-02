@@ -62,8 +62,9 @@ We will overwrite `/etc/shadow` with a copy containing a known root
 password hash. We can then `su` to root. Of course, this may lock other
 users out of the system. In the engagement where I employed this, I used
 a separate file read vulnerability to first obtain /etc/shadow, which I
-used as a template. If your situation is not so fortunate, you may be
-able to restore /etc/shadow from a backup after escalating to root.
+used as a template, and restored /etc/shadow after escalating to root.
+Another method is to set the unprivileged account to UID 0 in
+/etc/passwd. Your environment and operational needs may vary.
 
 ```
 make dmiwrite

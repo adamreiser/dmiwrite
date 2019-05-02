@@ -72,7 +72,6 @@ int main(int argc, char * argv[]) {
     u8 bcd_revision = 0;
     u16 max_struct_size = 0;
 
-
     buf[6] = major_version;
     buf[7] = minor_version;
     u16 *max_struct_size_ptr = (u16*) (buf+0x8);
