@@ -70,22 +70,22 @@ int set_checksum(u8 *buf, size_t offset, size_t len)
 
     }
 
-        if (sum == 0) {
-            if (DEBUG)
-                printf("\n\nValid checksum!!\n");
-            return true;
-        }
+    if (sum == 0) {
+        if (DEBUG)
+            printf("\n\nValid checksum!!\n");
+        return true;
+    }
 
-        else {
-            if (DEBUG)
-                printf("You can also make the change at the first offset if the\n"
-                        "rest of the array up to len is zero.\n\n");
+    else {
+        if (DEBUG)
+            printf("You can also make the change at the first offset if the\n"
+                    "rest of the array up to len is zero.\n\n");
 
-            /* Automatically fix and re-validate */
-            printf("\tSetting checksum: memset(buf+%lu, %d, 1);\n\n", a-1, 256-prev_sum);
-            memset(buf+a-1, 256-prev_sum, 1);
+        /* Automatically fix and re-validate */
+        printf("\tSetting checksum: memset(buf+%lu, %d, 1);\n\n", a-1, 256-prev_sum);
+        memset(buf+a-1, 256-prev_sum, 1);
 
-            return checksum(buf+offset, len);
+        return checksum(buf+offset, len);
 
-        }
+    }
 }
